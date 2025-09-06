@@ -23,7 +23,7 @@ int main(int argc, char *argv[]) {
     for (source = 1; source < size; source++) {
       MPI_Recv(message, 100, MPI_CHAR, source, MPI_ANY_TAG, MPI_COMM_WORLD, &status);
       // MPI_Recv(message, 100, MPI_CHAR, source, tag, MPI_COMM_WORLD, &status);
-      printf("%s\n", message);
+      printf("ERR? %d -> %s\n", status.MPI_ERROR, message);
     }
   }
 

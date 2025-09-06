@@ -1,4 +1,4 @@
-localhost slots=16
+localhost slots=4
 
 # beloin-mxr11 slots=4
 # 192.168.0.82 slots=4
